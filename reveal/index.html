@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 <title>
-40823202網站管理
+CP2019 Fall 計算機程式
 </title>
     <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
     <meta name="author" content="Hakim El Hattab">
@@ -39,7 +39,7 @@
 <div class="slides">
 <section data-markdown>
     <script type="text/template">
-## 計算機程式   40823202
+## 40823224 個人網站內容
 
 ### KMOLab
 
@@ -47,7 +47,7 @@
 Created by [KMOLab](http://lab.kmol.info/)
 </small>
 
-[CMSimfly 網誌](./../blog/index.html)
+[40823224 網誌](https://40823224.github.io/cp2019/blog/index.html)
 
 
     </script>
@@ -57,27 +57,25 @@ Created by [KMOLab](http://lab.kmol.info/)
 						
 <section data-markdown>
     <script type="text/template">
-# 
-* [FOR 迴圈(總數)]
-* [國旗]
+## 目錄
+* [FOR 迴圈(總數)]()
+* [中華民國國旗]
 * [亂數分組]
 * [溫度轉換]
 * [重量轉換]
+* [心得]
+
     </script>
 </section>
 
 
-						
+			
 <section>
 <section data-markdown>
     <script type="text/template">
-<!-- 請注意, @others 不可以內縮 -->
-# 數學符號與方程式
+#  FOR 迴圈(總數)
+<iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823202&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/for;theme=dark" width="800"></iframe>
 
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
-
-$$I = \int \rho R^{2} dV$$
     </script>
 </section>
 
@@ -87,45 +85,33 @@ $$I = \int \rho R^{2} dV$$
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
-
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
+#中華民國國旗
+<iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823202&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/flutter_roc;theme=dark" width="800"></iframe>
     </script>
 </section>
 
+
+                    
+<section data-markdown>
+    <script type="text/template">
+#  亂數分組
+<iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823202&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/random_grouping&amp;theme=dark" width="800"></iframe>
+    </script>
+</section>
 
 
 						
 <section data-markdown>
     <script type="text/template">
-## 使用 iframe 導入影片
+#  溫度轉換
+<iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823202&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/temp2&amp;theme=dark" width="800"></iframe>
+    </script>
+</section>
 
-### 導入影片 template
-
-<iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<section data-markdown>
+    <script type="text/template">
+# 重量轉換
+<iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823202&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/weight_change;theme=dark" width="800"></iframe>
     </script>
 </section>
 
@@ -133,6 +119,20 @@ make.start()
 						
 </section>
 
+<section data-markdown>
+    <script type="text/template">
+# 心得
+從一開始沒有碰過程式這種東西，現在從零開始學，我學到了如何創建程式、部落格，和一些程式語法，如最一開始的hello、for 迴圈、阻尼器、總數，到現在用了程式算微積分、畫國旗、溫度轉換和重量轉換，讓我們知道可以從程式之中，去運用於生活中，也可以用它在未來的工作或處理一些數理問題。
+    </script>
+</section>
+
+
+						
+    </script>
+</section>
+
+
+						
 </div>
 
 </div>
@@ -164,4 +164,3 @@ make.start()
 </body>
 
 </html>
-
